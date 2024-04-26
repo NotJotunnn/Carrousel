@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #fff;
+  background-color: #333;
+}
+
+.box-group-wrapper {
+  display: flex;
+
+  justify-content: left;
+  align-items: center;
+
+  background-color: #111;
+
+  position: relative;
+}
+
+.box-group {
+  display: flex;
+
+  gap: 15px;
+
+  width: fit-content;
+
+  /* outline: 2px solid red; */
+
+  background-color: #111;
+
+  padding-block: 15px;
+}
+
+.box, .faulty-box {
+  --box-bg-color: white;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: var(--box-bg-color);
+
+  /* cursor: pointer; */
+}
+
+.marker {
+  width: 5px;
+  height: 20px;
+
+  background-color: red;
+
+  position: absolute;
+  bottom: 0;
+  inset-inline: 50%;
+
+  transform: translateX(-50%);
+}
+
+h1 {
+  margin-inline: auto;
+
+  margin-block: 25px;
+}
+
+h2 {
+  margin-inline: auto;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+
+  padding: 15px;
+  margin-block: 15px;
+
+  gap: 15px;
+}
+
+.extras {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(255, 0, 0, 0.323);
+  outline: 2px solid red;
+
+  width: fit-content;
+
+  padding: 15px;
+  gap: 15px;
+}
+
+button {
+  margin-inline: auto;
+  padding: 5px 10px;
+
+  border: none;
+
+  background-color: #555;
+  color: white;
+
+  border-radius: 5px;
+}
+
+#randomBox {
+  background-color: lightgreen;
+  color: #222;
+
+  font-size: 24px;
+  font-weight: bolder;
+
+  padding: 10px 15px;
+}
+
+button:hover {
+  background-color: #444;
+  cursor: pointer;
+}
